@@ -242,12 +242,12 @@ Rails.application.config.sorcery.configure do |config|
   # config.battlenet.callback_url = "http://localhost:3000/oauth/callback?provider=battlenet"
   # config.battlenet.scope = "openid"
   # --- user config ---
-  config.user_config do |user|
+config.user_config do |user|
     # -- core --
     # Specify username attributes, for example: [:username, :email].
     # Default: `[:email]`
     #
-    # user.username_attribute_names =
+    
 
     # Change *virtual* password attribute, the one which is used until an encrypted one is generated.
     # Default: `:password`
@@ -262,7 +262,7 @@ Rails.application.config.sorcery.configure do |config|
     # Change default email attribute.
     # Default: `:email`
     #
-    # user.email_attribute_name =
+    user.username_attribute_names = [:name]
 
     # Change default crypted_password attribute.
     # Default: `:crypted_password`
