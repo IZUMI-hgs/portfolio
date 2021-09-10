@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+   <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <h1>お相手一覧</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>名前      </th>
+          <th> 紹介元   </th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @partners.each do |partner| %>
+          <tr>
+            <td><%= link_to "#{partner.name}さん",partner %></td>
+            <td><%= partner.referral_source %></td>
+            <td><%= link_to '詳細', partner %></td>
+            <td><%= link_to '編集', edit_partner_path(partner) %></td>
+            <td><%= link_to '削除', partner, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+         <% end %>
+     </tbody>
+    </table>
+
+    <br>
+
+        <%= link_to 'お相手登録', new_partner_path %>
+    </div>
+  </div>
+</div>

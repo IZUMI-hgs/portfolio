@@ -1,3 +1,18 @@
+<div class="container">
+ <div class="row">
+   <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+     <h1>婚活執事とは</h1>
+     <h2>婚活の同時進行を応援するお相手管理アプリです。</h2>    
+      <% if current_user%>
+      <div class="mt-5 text-center">
+      <%= link_to "お相手一覧へ", partners_path, class: 'btn btn-primary' %>
+        </div>
 
-<h1>top</h1>
-
+      <% else %>
+     <div class="mt-5 text-center">
+        <%= link_to "さっそく利用登録", new_user_path, class: 'btn btn-primary' %>
+          </div>
+          <% end %>
+  </div>
+ </div>
+</div>

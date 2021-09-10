@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  
+  skip_before_action :login_required, only: %i[top new create]
   # GET /users or /users.json
   def top;end
 
@@ -8,9 +8,6 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  # GET /users/1/edit
-  def edit
-  end
 
   # POST /users or /users.json
   def create

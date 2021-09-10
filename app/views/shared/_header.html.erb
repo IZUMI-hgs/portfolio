@@ -1,6 +1,8 @@
 <header>
   <nav class='navbar navbar-expand-lg navigation navbar-light bg-light'>
     <%= link_to image_tag('logo.png',:size => '120x150'), root_path, class: 'navbar-brand' %>
+    <%= link_to image_tag('logo2.png'), root_path, class: 'navbar-brand' %>
+
 
     <button class='navbar-toggler' data-toggle='collapse' data-target='#navbarSupportedContent'
       aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
@@ -12,7 +14,7 @@
        
 
         
-      
+          <%= link_to 'お相手一覧', partners_path, class: 'dropdown-item' %>
           <%= link_to 'ログアウト', logout_path, method: :delete, class: 'dropdown-item' %>
          
       </ul>
