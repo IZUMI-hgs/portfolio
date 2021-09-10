@@ -1,24 +1,25 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# サービス概要
+3行で
+婚活同時進行で
+相手が多すぎて誰が誰だかわからなくなってきた人に
+相手ごとの情報を管理できるサービスです
+  
+# 登場人物
+エンドユーザー
+管理者
+  
+# ユーザーが抱える課題
+婚活成功を夢見てあらゆる手段を駆使して
+候補者とメッセージやりとりやデートに励んでいる。
+しかしあまりにも候補者が多いため、誰が誰だかわからなくなってきた。
+デート中に別の人と混同して、卵アレルギーの人にオムライス食べたいと言ってしまった・・・・
+  
+# 解決方法
+お相手別に情報を登録しておき、いつでも閲覧できるようにしておく。
+デートの直前に目を通せば別の誰かと混同する心配なし！
+  
+# プロダクト
+お相手情報管理アプリケーション
+  
+# マーケット
+20-30代の婚活猛者たち

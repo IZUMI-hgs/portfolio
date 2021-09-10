@@ -1,0 +1,127 @@
+<div class="container">
+    <div class="row">
+   <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+<p>
+  <strong>名前:</strong>
+  <%= @partner.name %>
+</p>
+
+<p>
+  <strong>紹介元:</strong>
+  <%= @partner.referral_source %>
+</p>
+
+<p>
+  <strong>年齢:</strong>
+  <%= @partner.age %>
+</p>
+
+<p>
+  <strong>仕事:</strong>
+  <%= @partner.work %>
+</p>
+
+<p>
+  <strong>趣味:</strong>
+  <%= @partner.hobby %>
+</p>
+
+<p>
+  <strong>休日:</strong>
+  <%= @partner.holiday %>
+</p>
+
+<p>
+  <strong>収入:</strong>
+  <%= @partner.income %>
+</p>
+
+<p>
+  <strong>アレルギー:</strong>
+  <%= @partner.allergy %>
+</p>
+
+<p>
+  <strong>好きなポイント:</strong>
+  <%= @partner.like %>
+</p>
+
+<p>
+  <strong>う〜んポイント:</strong>
+  <%= @partner.not_fit %>
+</p>
+
+<p>
+  <strong>備考:</strong>
+  <%= @partner.note %>
+</p>
+
+<p>
+  <strong>1回目のデート内容:</strong>
+  <%= @partner.firstdate_detail %>
+</p>
+
+<p>
+  <strong>1回目のデート自分の服装:</strong>
+  <%= @partner.firstdate_appearance %>
+</p>
+
+<p>
+  <strong>1回目のデートの話題:</strong>
+  <%= @partner.firstdate_talk %>
+</p>
+
+<p>
+  <strong>1回目のデートの感想:</strong>
+  <%= @partner.firstdate_feeling %>
+</p>
+
+<p>
+  <strong>2回目のデート内容:</strong>
+  <%= @partner.seconddate_detail %>
+</p>
+
+<p>
+  <strong>2回目のデート自分の服装:</strong>
+  <%= @partner.seconddate_appearance %>
+</p>
+
+<p>
+  <strong>2回目のデートの話題:</strong>
+  <%= @partner.seconddate_talk %>
+</p>
+
+<p>
+  <strong>2回目のデートの感想:</strong>
+  <%= @partner.seconddate_feeling %>
+</p>
+
+<p>
+  <strong>3回目のデート内容:</strong>
+  <%= @partner.thirddate_detail %>
+</p>
+
+<p>
+  <strong>3回目のデート自分の服装:</strong>
+  <%= @partner.thirddate_appearance %>
+</p>
+
+<p>
+  <strong>3回目のデートの話題:</strong>
+  <%= @partner.thirddate_talk %>
+</p>
+
+<p>
+  <strong>3回目のデートの感想:</strong>
+  <%= @partner.thirddate_feeling %>
+</p>
+
+
+ <%= link_to '編集', edit_partner_path(@partner) %> |
+ <%= link_to '削除', @partner, method: :delete, date: {confirm: "投稿#{@partner.name}さんを削除します。よろしいですか？"} %>|
+
+<%= link_to 'Back', partners_path %>
+
+</div>
+</div>
+</div>
