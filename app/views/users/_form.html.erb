@@ -1,3 +1,11 @@
+<% if user.errors.any? %>
+<div class = "alert">
+  <ul>
+    <% user.errors.full_messages.each do |message| %>
+      <li><div class="p-3 mb-2 bg-danger text-white"><%= message %></div></li>
+    <% end %>
+  </ul>
+<% end %>
 <%= form_with(model: user, local: true) do |form| %>  
   <div class="container">
      <div class="row">
