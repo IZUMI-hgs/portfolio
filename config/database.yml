@@ -51,4 +51,4 @@ production:
   <<: *default
   database: portfolio_production
   username: portfolio
-  password: <%= ENV['PORTFOLIO_DATABASE_PASSWORD'] %>
+  password: 97f54f90
